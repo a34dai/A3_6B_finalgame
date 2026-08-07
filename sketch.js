@@ -193,6 +193,19 @@ let batAnimFrame = 0;
 let batAnimTimer = 0;
 
 // ------------------------------------------------------------
+// SEAWEED SPRITE CONFIGURATION
+// ------------------------------------------------------------
+
+const SEAWEED_SPRITE = {
+  numFrames: 3,
+  animSpeed: 18, // lower = faster sway
+};
+
+let seaweedFrame = 0;
+let seaweedTimer = 0;
+let seaweedPingPongDir = 1;
+
+// ------------------------------------------------------------
 // RUNE SPRITE CONFIGURATION
 // ------------------------------------------------------------
 
@@ -1001,8 +1014,8 @@ function preload() {
   ground2Img = loadImage("assets/images/ground2.png");
   barkImg = loadImage("assets/images/bark.png");
 
-  seaweedImg = loadImage("assets/images/seaweed.png");
-  seaweed2Img = loadImage("assets/images/2seaweed.png");
+  seaweedImg = loadImage("assets/images/seaweedSprite.png");
+  seaweed2Img = loadImage("assets/images/2seaweedSprite.png");
   sandImg = loadImage("assets/images/sand.png");
   sand2Img = loadImage("assets/images/2sand.png");
   sandrockImg = loadImage("assets/images/sandrock.png");
@@ -1161,6 +1174,8 @@ DRAGON_SLEEPING_SPRITE.frameWidth =
       DRAGON_SLEEPING_SPRITE.frameHeight = dragonSleepingSheet.height;
   BAT_SPRITE.frameWidth = batFlySheet.width / BAT_SPRITE.numFrames;
   BAT_SPRITE.frameHeight = batFlySheet.height;
+  SEAWEED_SPRITE.frameWidth = seaweedImg.width / SEAWEED_SPRITE.numFrames;
+  SEAWEED_SPRITE.frameHeight = seaweedImg.height;
 
   if (birdBGsound) birdBGsound.setVolume(0.15);
 
@@ -1596,6 +1611,18 @@ function drawLevelScreen() {
         if (runeTimer >= RUNE_SPRITE.animSpeed) {
           runeTimer = 0;
           runeFrame = (runeFrame + 1) % RUNE_SPRITE.numFrames;
+        }
+        seaweedTimer++;
+        if (seaweedTimer >= SEAWEED_SPRITE.animSpeed) {
+          seaweedTimer = 0;
+          seaweedFrame += seaweedPingPongDir;
+          if (seaweedFrame >= SEAWEED_SPRITE.numFrames - 1) {
+            seaweedFrame = SEAWEED_SPRITE.numFrames - 1;
+            seaweedPingPongDir = -1;
+          } else if (seaweedFrame <= 0) {
+            seaweedFrame = 0;
+            seaweedPingPongDir = 1;
+          }
         }
 
         resolveSolidCollisions();
@@ -3833,11 +3860,19 @@ function drawTiles(area) {
           rect(x, y, TILE_SIZE, TILE_SIZE);
         }
       } else if (layer.name === "seaweed") {
-        const seaweedSprite = currentScreen === LEVEL_TWO && seaweed2Img ? seaweed2Img : seaweedImg;
-        seaweedSprite
-          ? image(seaweedSprite, x, y, TILE_SIZE, TILE_SIZE)
-          : (fill(tileColor(layer.name, t.id)),
-            rect(x, y, TILE_SIZE, TILE_SIZE));
+        const sheet = currentScreen === LEVEL_TWO ? seaweed2Img : seaweedImg;
+        if (sheet) {
+          const fw = sheet.width / SEAWEED_SPRITE.numFrames;
+          const fh = sheet.height;
+          const sx = seaweedFrame * fw;
+          push();
+          imageMode(CORNER);
+          image(sheet, x, y, TILE_SIZE, TILE_SIZE, sx, 0, fw, fh);
+          pop();
+        } else {
+          fill(tileColor(layer.name, t.id));
+          rect(x, y, TILE_SIZE, TILE_SIZE);
+        }
       } else if (GATE_LAYERS[layer.name] !== undefined) {
         const isOpen = keyCollected >= GATE_LAYERS[layer.name];
         if (!isOpen) image(barrierImg, x, y, TILE_SIZE, TILE_SIZE);

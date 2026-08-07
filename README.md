@@ -114,6 +114,8 @@ Post-Showcase 2 planned improvements:
 | `assets/images/Rock2.png` | Hanna Park |
 | `assets/images/stone.png` | Janelle Lai |
 | `assets/images/TheEnd.png` | Hanna Park |
+| `assets/images/seaweedSprite.png` | Janelle Lai |
+| `assets/images/2seaweedSprite.png` | Janelle Lai |
 | `assets/sounds/flappingsound` [1]| free sound community, wingflap_fast-2— Pixabay.com  
 | `assets/sounds/die.mp3` [2]| Sound shelf studio, UI loading end fail — Pixabay.com  
 | `assets/sounds/walking.mp3` [3]| Joentnt, Walk on grass 3 — Pixabay.com |
