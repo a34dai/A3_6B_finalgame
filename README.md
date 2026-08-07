@@ -4,8 +4,8 @@
 
 ## Description
 This is a game that explores the nature of bipolar disability through a fantasy world. Players navigate a shifting world through involuntary transformations, requiring the players to adapt through a turbulent cycle.
-The core mechanics of the game is the involuntary state changes, the hazards, and the objectives. The players are forced to cycle through the different physical forms throughout the gameplay, adapting to each state. The hazards are placed around the map depending on the state the player is in, creating failure states.The objectives centralize the player in their exploration of the fantasy world, creating a clear path. In further levels, new mechanics are introduced like in level 2: noise bar, 
-The player goes through an emotional loop where they face tension vs. release. The bird form sparks high adrenaline anxiety and requires intense focus, whereas the fish requires patience, and methodical calculation compared to the bird.
+The core mechanics of the game is the involuntary state changes, the hazards, and the objectives. The players are forced to cycle through the different physical forms throughout the gameplay, adapting to each state. The hazards are placed around the map depending on the state the player is in, creating failure states. Hazards target the weaknesses of the player's current state, training them to navigate seemingly incompatible environments, such as enclosed, tight corriders as a bird and swimming upwards as a fish. The objective of collecting runes to clear barriers centralizes the player in their exploration of the fantasy world, creating a clear path. In further levels, new mechanics are introduced, such as the noise bar that challenges the player to regulate their behaviour, and an enemy that demands highly efficient timing to preserve stamina.
+The player goes through an emotional loop where they face tension vs. release. The bird form sparks high adrenaline anxiety and requires intense focus, whereas the fish requires patience, and methodical calculation.
 
 ## Setup and Interaction Instructions
 (How to run and play the game)
@@ -15,12 +15,12 @@ To run the sketch locally, open `index.html` in Google Chrome using Live Server.
 - Move: WASD
 - A and D and [left right arrow keys] to move left right
 - D and [downwards arrow key] to move down
-- W/[Space] and [upwards arrow key] to jump/flap/swim up
-- [Enter] to progress through popups
+- W/[Space] and [upwards arrow key] to jump/flap/swim up (for swimming, it needs to be pressed repeatedly to gain momentum)
+- [Enter] to progress through popups or dialogue
 
 Level 3 Special Interactions
-- [Enter] to throw rocks, and progress through dialogue
-- Y and N to offer/refuse the rune to the dragon
+- [E] to throw rocks
+- [Y] and [N] to answer the dragon
 
 **Opening the Chrome Console**
 - **Windows:** Press `F12` or `Ctrl + Shift + J`, then click the **Console** tab
@@ -32,9 +32,12 @@ Post-Playtest: 3 changes made based on playtesting
 2. Widen the bird fight camera scope in Level 3 so more of the arena is visible.
 3. Add clearer instructions on how to get through the levels (using dialogue or pop up text) 
 
-Post-Showcase 2 planned improvements:
-1.
-2. 
+Post-Showcase 2 changes:
+1. Seaweed animation to distinguish it from background
+2. Slight map change for level 3 fish boss fight to improve visibility of spikes at bottom
+3. Fixed bird not showing flapping animation when using spacebar 
+4. Added a delay before being able to close level 3 bird boss fight instructions, preventing players from pre-emptively closing it during the white transition phase
+5. Moved the rock to be above the bird instead of below it to prevent players from thinking they needed to drop it on the dragon, and also improved instructions wording for concise clarity
 
 ## Assets
 
