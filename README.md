@@ -45,7 +45,7 @@ Post-Showcase 2 changes:
 1. Seaweed animation to distinguish it from background
 2. Slight map change for level 3 fish boss fight to improve visibility of spikes at bottom
 3. Fixed bird not showing flapping animation when using spacebar 
-4. Added a delay before being able to close level 3 bird boss fight instructions, preventing players from accidentally closing it during the white transition phase and also forcing them to read the instructions before moving on
+4. Added a delay before being able to close level 3 bird boss fight instructions, preventing players from accidentally closing it during the white transition phase and also ensuring they actually read the instructions before moving on
 5. Moved the rock to be above the bird instead of below it to prevent players from thinking they needed to drop it on the dragon, and also improved instructions wording for concise clarity
 6. Added favicon to remove console error
 
