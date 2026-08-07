@@ -3,11 +3,14 @@
 ## Group Number: 6B
 
 ## Description
-This is a game that explores the nature of bipolar disability through a fantasy world. Players navigate a shifting world through involuntary transformations, requiring the players to adapt through a turbulent cycle.
+This is a game that explores the nature of bipolar disorder through a fantasy world. Players navigate a shifting world through involuntary transformations, requiring the players to adapt through a turbulent cycle.
 The core mechanics of the game is the involuntary state changes, the hazards, and the objectives. The players are forced to cycle through the different physical forms throughout the gameplay, adapting to each state. 
 The hazards are placed around the map depending on the state the player is in, creating failure states. These target the weaknesses of the player's current character state, training them to navigate innately incompatible environments, such as enclosed, tight corriders as the bird and having to swim upwards as the fish. 
-The objective of collecting runes to clear barriers centralizes the player in their exploration of the fantasy world, creating a clear path. In further levels, new mechanics are introduced, such as the noise bar that challenges the player to regulate their behaviour, and an enemy that demands highly efficient timing to preserve stamina.
-The player goes through an emotional loop where they face tension vs. release. The bird form sparks high adrenaline anxiety and requires intense focus, whereas the fish requires patience, and methodical calculation.
+The objective of collecting runes to clear barriers centralizes the player in their exploration of the fantasy world, creating a clear path. 
+In further levels, new mechanics are introduced:
+In level 2, sleeping killer bats and a noise bar challenge the player to regulate their behaviour, while a hostile dragon demands highly efficient timing to preserve stamina.
+In level 3, the player is cornered by the dragon and has to fight back, using both the external environment and throwing rocks to deal damage.
+The player goes through an emotional loop where they face tension vs. release. The bird form sparks high adrenaline anxiety and requires intense focus, whereas the fish requires patience, and methodical calculation. After the player is forced to confront the dragon in a final battle, the game ends on the theme of acceptance rather than conquest.
 
 ## Setup and Interaction Instructions
 (How to run and play the game)
