@@ -14,7 +14,7 @@ In further levels, new mechanics are introduced:
 In level 2, sleeping killer bats and a noise bar challenge the player to regulate their behaviour, while a hostile dragon demands highly efficient timing to preserve stamina.
 In level 3, the player is cornered by the dragon and has to fight back, using both the external environment and throwing rocks to deal damage.
 
-The player goes through an emotional loop where they face tension vs. release. The bird form sparks high adrenaline anxiety and requires intense focus, whereas the fish requires patience, and methodical calculation. After the player is forced to confront the dragon in a final battle, the game ends on the theme of acceptance rather than conquest.
+The player goes through an emotional loop where they face tension vs. release. The bird form sparks high adrenaline anxiety and requires intense focus, whereas the fish requires patience, and methodical calculation. After the player is forced to confront the dragon in a final battle, the game's resolution ends on the theme of acceptance rather than conquest.
 
 ## Setup and Interaction Instructions
 (How to run and play the game)
