@@ -742,9 +742,9 @@ function drawLevel3RockTutorial() {
   fill(255);
   textSize(21);
   // Line 1
-text("Grab rocks and press [E] to throw at the dragon.", width / 2, height / 2 - 20);
+text("Grab rocks and press [E] to throw them at the dragon.", width / 2, height / 2 - 20);
 // Line 2
-text("No need to aim, they're homing rocks!", width / 2, height / 2 + 15);
+text("Tip: The closer the dragon, the more accurate your throw will be.", width / 2, height / 2 + 15);
 
   // Fades in exactly as [Enter] actually becomes acceptable (see the
   // level3RockTutorialFrames >= 60 check in keyPressed()) instead of just
