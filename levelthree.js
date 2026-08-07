@@ -734,17 +734,18 @@ function drawLevel3RockTutorial() {
 
   push();
   noStroke();
-  fill(0, 0, 0, 170);
+  fill(0, 0, 0, 190);
   rect(0, 0, width, height);
 
   textFont("monospace");
   textAlign(CENTER, CENTER);
   fill(255);
-  textSize(21);
+  textSize(19);
   // Line 1
-text("Grab rocks and press [E] to throw them at the dragon.", width / 2, height / 2 - 20);
+text("Grab rocks and press [E] to throw them at the dragon.", width / 2, height / 2 - 13);
 // Line 2
-text("Tip: The closer the dragon, the more accurate your throw will be.", width / 2, height / 2 + 15);
+  textSize(16);
+text("Tip: The closer the dragon, the more accurate your throw.", width / 2, height / 2 + 30);
 
   // Fades in exactly as [Enter] actually becomes acceptable (see the
   // level3RockTutorialFrames >= 60 check in keyPressed()) instead of just
@@ -754,7 +755,7 @@ text("Tip: The closer the dragon, the more accurate your throw will be.", width 
   const textAlpha = constrain(map(level3RockTutorialFrames, unlockFrame, unlockFrame + fadeInDuration, 0, 255), 0, 255);
   fill(200, 200, 200, textAlpha);
   textSize(15);
-  text("Press [Enter] to continue", width / 2, height / 2 + 50);
+  text("Press [Enter] to continue", width / 2, height / 2 + 100);
   pop();
 }
 
