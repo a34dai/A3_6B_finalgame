@@ -30,7 +30,7 @@ Level 3 Special Interactions
 Post-Playtest: 3 changes made based on playtesting
 1. Add a visual "tell" for the Level 3 dragon (angry state) right before it charges, so the attack feels predictable and reasonable
 2. Widen the bird fight camera scope in Level 3 so more of the arena is visible.
-3. Add clearer instructions on how to get through the levels (using dialogue or pop up text) 
+3. Added clear instructions for the Level 3 bird arena 
 
 Post-Showcase 2 changes:
 1. Seaweed animation to distinguish it from background
@@ -38,6 +38,7 @@ Post-Showcase 2 changes:
 3. Fixed bird not showing flapping animation when using spacebar 
 4. Added a delay before being able to close level 3 bird boss fight instructions, preventing players from pre-emptively closing it during the white transition phase
 5. Moved the rock to be above the bird instead of below it to prevent players from thinking they needed to drop it on the dragon, and also improved instructions wording for concise clarity
+6. Added favicon to remove console error
 
 ## Assets
 
